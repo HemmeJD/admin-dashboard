@@ -1,0 +1,345 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+svg {
+    fill: var(--dk-gray);
+}
+
+/* Color Variables */
+:root {
+    --lt-gray: #f2f2f2;
+    --med-gray: #d9d9d9;
+    --dk-gray: #525252;
+    --blue: #0094FF;
+    --red: #FF6262;
+}
+
+/* Page Styles */
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 95vh;
+}
+
+.sidebar {
+    background-color: var(--lt-gray);
+    padding: 20px 30px;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr) ;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    grid-area: 1 / 1 / 2 / 1;
+}
+
+.logo-icon {
+    width: 60px;
+}
+
+.logo > h1 {
+    font-size: 28px;
+    color: var(--dk-gray);
+    font-weight:600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.nav {
+    grid-row-start: 3;
+    grid-row-end: 13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-nav {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 35px;
+    width: 100%;
+}
+
+.bottom-nav {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 35px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.nav-link > svg {
+    margin: 0 16px;
+    width: 28px;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+}
+
+.nav-link > h2 {
+    font-weight: 500;
+    color: var(--dk-gray);
+    letter-spacing: 1.8px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.main {
+    background-color: white;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+}
+
+.header {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    border-bottom: solid 1px var(--lt-gray);
+    padding: 0 0 20px 0;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search > svg {
+    height: 32px;
+}
+
+.search > input {
+    background-color: var(--med-gray);
+    color: var(--dk-gray);
+    border-radius: 2em;
+    width: 600px;
+    padding: 14px 0 14px 24px;
+    margin-left: 20px;
+    border: none;
+}
+
+.app-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.app-controls > svg {
+    height: 32px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-info > h3 {
+    font-weight: 500;
+    color: var(--dk-gray);
+    letter-spacing: 1.8px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+.account-name {
+    margin-left: 20px;
+}
+
+.account-name > p {
+    color: var(--dk-gray);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-name > h3 {
+    font-size: 20px;
+    color: var(--dk-gray);
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.cta {
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    padding: 14px 0;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    width: 120px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.dashboard {
+    padding: 20px 0px 0px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.project-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline {
+    font-size: 20px;
+    color: var(--dk-gray);
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--lt-gray);
+    height: 200px;
+    border-radius: 15px;
+    padding: 30px
+}
+
+.blue {
+    border-left: solid 15px var(--blue);
+}
+
+.red {
+    border-left: solid 15px var(--red);
+}
+
+.card-content {
+    margin-top: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dk-gray);
+    letter-spacing: 1.6px;
+}
+
+.card-content > p {
+    font-size: 16px;
+    line-height:1.6;
+    margin-top: 8px;
+    font-weight: 200;
+    color: var(--dk-gray);
+}
+
+.content-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:right;
+    position: relative;
+    top: 60px;
+}
+
+.content-icon {
+    height: 28px;
+    margin-left: 10px;
+}
