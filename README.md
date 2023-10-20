@@ -29,7 +29,7 @@ This is my submission for the Admin Dashboard project within the Intermediate HT
 ### Links
 
 - Solution URL: [View Solution](https://github.com/HemmeJD/admin-dashboard)
-- Live Site URL: [View Live Site](https://hemmejd.github.io/sign-up-form/)
+- Live Site URL: [View Live Site](https://hemmejd.github.io/admin-dashboard/)
 
 ### Built with
 
