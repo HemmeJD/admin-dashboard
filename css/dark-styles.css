@@ -1,0 +1,71 @@
+
+.dark svg {
+    fill: #F2F2F2;
+}
+
+.dark .sidebar {
+    background-color: #525252;
+}
+
+.dark .logo > h1 {
+    color: #F2F2F2;
+}
+
+.dark .nav-link > h2 {
+    color: #F2F2F2;
+}
+
+.dark .main {
+    background-color: #1e1e1e;
+}
+
+.dark .header {
+    border-bottom: solid 1px #959595;
+}
+
+.app-controls > svg {
+    height: 32px;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark .account-info > h3 {
+    color: #f2f2f2;
+}
+
+.dark .account-name > p {
+    color: #f2f2f2;
+}
+
+.dark .account-name > h3 {
+    color: #f2f2f2;
+}
+
+.dark .headline {
+    color: #f2f2f2;
+}
+
+.dark .project-card {
+    background-color: #525252;
+}
+
+.dark .card-title {
+    color: #f2f2f2;
+}
+
+.dark .card-content > div > p {
+    color: #f2f2f2;
+}
+
+.dark .trending-account-name {
+    color:#f2f2f2;
+}
+
+.dark #light-dark-icon {
+    stroke: #f2f2f2;
+}
